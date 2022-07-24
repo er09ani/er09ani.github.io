@@ -1241,7 +1241,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(33.33% - 10px); }
 
-
+  .contacts-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+  }
 
   /**
    * #PORTFOLIO, BLOG 
@@ -1250,6 +1253,17 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-img,
   .blog-banner-box { height: auto; }
 
+}
+
+@media (max-width: 1000px) {
+
+  /**
+   * client
+   */
+
+   .sidebar{
+    margin-top: 80px;
+   }
 }
 
 
