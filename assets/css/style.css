@@ -399,7 +399,7 @@ main {
 
 .contacts-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto auto auto;
   gap: 16px;
 }
 
@@ -456,7 +456,7 @@ main {
 
 .navbar {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   background: hsla(240, 1%, 17%, 0.75);
@@ -1276,7 +1276,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-2: 24px;
     --fs-3: 26px;
     --fs-4: 18px;
-    --fs-6: 15px;
+    --fs-6: 20px;
     --fs-7: 15px;
     --fs-8: 12px;
 
@@ -1480,7 +1480,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     scroll-padding-inline: 45px;
   }
 
-  .clients-item { min-width: calc(33.33% - 35px); }
+  .clients-item { 
+    text-align: center;
+    min-width: calc(33.33% - 35px); 
+  }
 
 
 
